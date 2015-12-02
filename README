@@ -1,0 +1,27 @@
+# Example project for consuming Identity Kinesis Stream
+
+Usage:
+
+    sbt 'run --streamName my-stream-name'
+
+Output:
+
+    ...
+    Got Kinesis stream name = xxx
+    Got Kinesis end-point = kinesis.eu-west-1.amazonaws.com
+    Dec 02, 2015 5:32:16 PM com.amazonaws.services.kinesis.leases.impl.LeaseCoordinator <init>
+    INFO: With failover time 10000ms and epsilon 25ms, LeaseCoordinator will renew leases every 3308ms and take leases every 20050ms
+    ...
+    Dec 02, 2015 5:32:41 PM com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher initialize
+    INFO: Initializing shard shardId-000000000000 with LATEST
+    Shard ID = shardId-000000000000
+    Dec 02, 2015 5:32:50 PM com.amazonaws.services.kinesis.metrics.impl.CWPublisherRunnable publishMetrics
+    INFO: Successfully published 20 datums.
+    Dec 02, 2015 5:33:00 PM com.amazonaws.services.kinesis.metrics.impl.CWPublisherRunnable publishMetrics
+    INFO: Successfully published 18 datums.
+
+
+    =====
+    Got event for user ID = 1
+    =====
+
